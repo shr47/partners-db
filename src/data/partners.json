@@ -475,25 +475,6 @@
     "notes": ""
   },
   {
-    "id": 26,
-    "name": "BeOpen",
-    "eco": "Dan",
-    "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": "",
-      "presale": "",
-      "deployment": "",
-      "expertLab": "",
-      "clientEngineer": ""
-    },
-    "links": {
-      "partnerPortal": "",
-      "isc": ""
-    },
-    "notes": ""
-  },
-  {
     "id": 27,
     "name": "Datatex",
     "eco": "Dan",
@@ -628,8 +609,8 @@
   },
   {
     "id": 34,
-    "name": "Bopen",
-    "eco": "",
+    "name": "BeOpen",
+    "eco": "Dan",
     "partnerLevel": "Silver",
     "products": ["API Connect/CP4I", "WebMethods"],
     "contacts": {
