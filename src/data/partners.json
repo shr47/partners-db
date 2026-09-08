@@ -4,527 +4,716 @@
     "name": "Matrix",
     "eco": "Michal",
     "partnerLevel": "Platinum",
-    "products": ["App Connect"],
-    "contacts": {
-      "sell": [{"name": "אלכסי ברוך", "phone": "", "email": ""}],
-      "presale": [{"name": "אלכסי ברוך", "phone": "", "email": ""}],
-      "deployment": [],
-      "expertLab": "קיים בארץ ובחול",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "App Connect",
+        "contacts": {
+          "sell": [{"name": "אלכסי ברוך", "phone": "", "email": ""}],
+          "presale": [{"name": "אלכסי ברוך", "phone": "", "email": ""}],
+          "deployment": [],
+          "expertLab": "קיים בארץ ובחול",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Tangram",
     "eco": "Michal",
     "partnerLevel": "Platinum",
-    "products": ["MongoDB", "Integration DataPower Dpod", "Guardium", "WebMethods", "Decision Manager", "Verify Pam", "Aspera"],
-    "contacts": {
-      "sell": [{"name": "נחום מזור", "phone": "", "email": ""}],
-      "presale": [{"name": "אלכסי סלטובסקי", "phone": "", "email": ""}, {"name": "אלכס ווירטבסקי", "phone": "", "email": ""}],
-      "deployment": [{"name": "עדן", "phone": "", "email": ""}],
-      "expertLab": "קיים בארץ ובחול",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "MongoDB",
+        "contacts": {
+          "sell": [{"name": "נחום מזור", "phone": "", "email": ""}],
+          "presale": [{"name": "אלכסי סלטובסקי", "phone": "", "email": ""}, {"name": "אלכס ווירטבסקי", "phone": "", "email": ""}],
+          "deployment": [{"name": "עדן", "phone": "", "email": ""}],
+          "expertLab": "קיים בארץ ובחול",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Integration DataPower Dpod",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Guardium",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "WebMethods",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Decision Manager",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Verify Pam",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Aspera",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 3,
     "name": "2secure",
     "eco": "Michal",
     "partnerLevel": "Gold",
-    "products": ["Qradar", "Guardium"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Qradar",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Guardium",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 4,
     "name": "CloudZone",
     "eco": "Michal",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 5,
     "name": "AWS",
     "eco": "Michal",
     "partnerLevel": "",
-    "products": ["Cloudability", "CP4BA"],
-    "contacts": {
-      "sell": [{"name": "שירה", "phone": "", "email": ""}],
-      "presale": [{"name": "שירה", "phone": "", "email": ""}],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Cloudability",
+        "contacts": {
+          "sell": [{"name": "שירה", "phone": "", "email": ""}],
+          "presale": [{"name": "שירה", "phone": "", "email": ""}],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "CP4BA",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 6,
     "name": "Team Malam",
     "eco": "Michal",
     "partnerLevel": "Gold",
-    "products": ["Verify", "Vault"],
-    "contacts": {
-      "sell": [{"name": "ערן יקיר", "phone": "", "email": ""}, {"name": "שלמי דואנס", "phone": "", "email": ""}],
-      "presale": [{"name": "ערן יקיר", "phone": "", "email": ""}, {"name": "שלמי דואנס", "phone": "", "email": ""}],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Verify",
+        "contacts": {
+          "sell": [{"name": "ערן יקיר", "phone": "", "email": ""}, {"name": "שלמי דואנס", "phone": "", "email": ""}],
+          "presale": [{"name": "ערן יקיר", "phone": "", "email": ""}, {"name": "שלמי דואנס", "phone": "", "email": ""}],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Vault",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 7,
     "name": "Elad",
     "eco": "Michal",
     "partnerLevel": "",
-    "products": ["Cloud pak for Data"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Cloud pak for Data",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 8,
     "name": "Tutit",
     "eco": "Michal",
     "partnerLevel": "Silver",
-    "products": ["Datapower Dpod", "WebMethods"],
-    "contacts": {
-      "sell": [{"name": "חנן קינן", "phone": "", "email": ""}],
-      "presale": [{"name": "חנן קינן", "phone": "", "email": ""}],
-      "deployment": [{"name": "חנן קינן", "phone": "", "email": ""}],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Datapower Dpod",
+        "contacts": {
+          "sell": [{"name": "חנן קינן", "phone": "", "email": ""}],
+          "presale": [{"name": "חנן קינן", "phone": "", "email": ""}],
+          "deployment": [{"name": "חנן קינן", "phone": "", "email": ""}],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "WebMethods",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 9,
     "name": "AMAT Barmor",
     "eco": "Amitai",
     "partnerLevel": "Platinum",
-    "products": ["Bob", "Watson X code assist"],
-    "contacts": {
-      "sell": [{"name": "ניגון שמיר", "phone": "", "email": ""}],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "קיים בארץ ובחול",
-      "clientEngineer": [{"name": "בארץ", "phone": "", "email": ""}]
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Bob",
+        "contacts": {
+          "sell": [{"name": "ניגון שמיר", "phone": "", "email": ""}],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "קיים בארץ ובחול",
+          "clientEngineer": [{"name": "בארץ", "phone": "", "email": ""}]
+        }
+      },
+      {
+        "name": "Watson X code assist",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 10,
     "name": "Terasky",
     "eco": "Amitai",
     "partnerLevel": "Gold",
-    "products": ["Vault", "Consul", "Verify Pam", "Verify"],
-    "contacts": {
-      "sell": [{"name": "אמנון סיני", "phone": "", "email": ""}, {"name": "דני - CDATA", "phone": "", "email": ""}, {"name": "אביב רחמים", "phone": "", "email": ""}],
-      "presale": [{"name": "דוד גדעוני", "phone": "", "email": ""}, {"name": "שלמי חימוב", "phone": "", "email": ""}],
-      "deployment": [{"name": "דוד גדעוני", "phone": "", "email": ""}, {"name": "שלמי חימוב", "phone": "", "email": ""}],
-      "expertLab": "קיים בארץ ובחול",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": "לירון לוי"
+    "notes": "לירון לוי",
+    "products": [
+      {
+        "name": "Vault",
+        "contacts": {
+          "sell": [{"name": "אמנון סיני", "phone": "", "email": ""}, {"name": "אביב רחמים", "phone": "", "email": ""}],
+          "presale": [{"name": "דוד גדעוני", "phone": "", "email": ""}, {"name": "שלמי חימוב", "phone": "", "email": ""}],
+          "deployment": [{"name": "דוד גדעוני", "phone": "", "email": ""}, {"name": "שלמי חימוב", "phone": "", "email": ""}],
+          "expertLab": "קיים בארץ ובחול",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Consul",
+        "contacts": {
+          "sell": [{"name": "דני - CDATA", "phone": "", "email": ""}],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Verify Pam",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Verify",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 11,
     "name": "Aman",
     "eco": "Amitai",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 12,
     "name": "Bezeq Int",
     "eco": "Amitai",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 13,
     "name": "One",
     "eco": "Amitai",
     "partnerLevel": "",
-    "products": ["Planning Analytics"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Planning Analytics",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 14,
     "name": "Cloudbazz",
     "eco": "Amitai",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 15,
     "name": "Libi",
     "eco": "Amitai",
     "partnerLevel": "Gold",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 16,
     "name": "GlobalDotS",
     "eco": "Amitai",
     "partnerLevel": "Gold",
-    "products": ["Ns1", "Cloudability"],
-    "contacts": {
-      "sell": [{"name": "שרון", "phone": "", "email": ""}],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Ns1",
+        "contacts": {
+          "sell": [{"name": "שרון", "phone": "", "email": ""}],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Cloudability",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 17,
     "name": "Commit",
     "eco": "Amitai",
     "partnerLevel": "Gold",
-    "products": ["Instana", "SevOne", "Vault", "Verify"],
-    "contacts": {
-      "sell": [{"name": "אילית אגייב", "phone": "", "email": ""}, {"name": "מירן", "phone": "", "email": ""}],
-      "presale": [{"name": "יהודה", "phone": "", "email": ""}, {"name": "וולאד ריי", "phone": "", "email": ""}, {"name": "יורי", "phone": "", "email": ""}],
-      "deployment": [{"name": "יורי", "phone": "", "email": ""}],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Instana",
+        "contacts": {
+          "sell": [{"name": "אילית אגייב", "phone": "", "email": ""}, {"name": "מירן", "phone": "", "email": ""}],
+          "presale": [{"name": "יהודה", "phone": "", "email": ""}],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "SevOne",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Vault",
+        "contacts": {
+          "sell": [],
+          "presale": [{"name": "וולאד ריי", "phone": "", "email": ""}, {"name": "יורי", "phone": "", "email": ""}],
+          "deployment": [{"name": "יורי", "phone": "", "email": ""}],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Verify",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 18,
     "name": "All Cloud",
     "eco": "Dan",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 19,
     "name": "Ness",
     "eco": "Dan",
     "partnerLevel": "Gold",
-    "products": ["Storage"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Storage",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 20,
     "name": "Yael/IFN",
     "eco": "Dan",
     "partnerLevel": "",
-    "products": ["WatsonX.data", "Watson Orchestrate"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "WatsonX.data",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "Watson Orchestrate",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 21,
     "name": "2Bcloud",
     "eco": "Dan",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 22,
     "name": "DoIT",
     "eco": "Dan",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 23,
     "name": "Dela",
     "eco": "Dan",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 24,
     "name": "Deloitte",
     "eco": "Dan",
     "partnerLevel": "Platinum",
-    "products": ["Planning Analytics"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Planning Analytics",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 25,
     "name": "Eshnav",
     "eco": "Dan",
     "partnerLevel": "Gold",
-    "products": ["Instana"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Instana",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 26,
     "name": "Datatex",
     "eco": "Dan",
     "partnerLevel": "",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 27,
     "name": "WeRTech",
     "eco": "Dan",
     "partnerLevel": "Silver",
-    "products": ["Maximo"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Maximo",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 28,
     "name": "DNA",
     "eco": "Orly",
     "partnerLevel": "",
-    "products": ["Cloudability"],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Cloudability",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 29,
     "name": "Bynat",
     "eco": "Orly",
     "partnerLevel": "Silver",
-    "products": ["Terraform"],
-    "contacts": {
-      "sell": [{"name": "מאיה", "phone": "", "email": ""}],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "Terraform",
+        "contacts": {
+          "sell": [{"name": "מאיה", "phone": "", "email": ""}],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   },
   {
     "id": 30,
     "name": "Pelican",
     "eco": "",
     "partnerLevel": "Silver",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 31,
     "name": "Qmaster",
     "eco": "",
     "partnerLevel": "Silver",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 32,
     "name": "Nogamy",
     "eco": "",
     "partnerLevel": "Silver",
-    "products": [],
-    "contacts": {
-      "sell": [],
-      "presale": [],
-      "deployment": [],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": []
   },
   {
     "id": 33,
     "name": "BeOpen",
     "eco": "Dan",
     "partnerLevel": "Silver",
-    "products": ["API Connect/CP4I", "WebMethods"],
-    "contacts": {
-      "sell": [{"name": "אורן", "phone": "", "email": ""}],
-      "presale": [{"name": "אמיר דניאלי", "phone": "", "email": ""}, {"name": "יעל ברוך", "phone": "", "email": ""}],
-      "deployment": [{"name": "אמיר דניאלי", "phone": "", "email": ""}, {"name": "יעל ברוך", "phone": "", "email": ""}],
-      "expertLab": "",
-      "clientEngineer": []
-    },
     "links": { "partnerPortal": "" },
-    "notes": ""
+    "notes": "",
+    "products": [
+      {
+        "name": "API Connect/CP4I",
+        "contacts": {
+          "sell": [{"name": "אורן", "phone": "", "email": ""}],
+          "presale": [{"name": "אמיר דניאלי", "phone": "", "email": ""}, {"name": "יעל ברוך", "phone": "", "email": ""}],
+          "deployment": [{"name": "אמיר דניאלי", "phone": "", "email": ""}, {"name": "יעל ברוך", "phone": "", "email": ""}],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      },
+      {
+        "name": "WebMethods",
+        "contacts": {
+          "sell": [],
+          "presale": [],
+          "deployment": [],
+          "expertLab": "",
+          "clientEngineer": []
+        }
+      }
+    ]
   }
 ]

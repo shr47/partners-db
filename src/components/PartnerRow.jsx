@@ -13,8 +13,9 @@ const ECO_COLORS = {
 export default function PartnerRow({ partner, onClick, isSelected }) {
   const levelColor = LEVEL_COLORS[partner.partnerLevel] || null;
   const ecoColor = ECO_COLORS[partner.eco] || '#9ca3af';
-  const sellNames = partner.contacts.sell.map(c => c.name).join(', ');
-  const presaleNames = partner.contacts.presale.map(c => c.name).join(', ');
+  // כל אנשי קשר sell מכל המוצרים (ייחודיים)
+  const sellNames = [...new Set(partner.products.flatMap(p => p.contacts.sell.map(c => c.name).filter(Boolean)))].join(', ');
+  const presaleNames = [...new Set(partner.products.flatMap(p => p.contacts.presale.map(c => c.name).filter(Boolean)))].join(', ');
 
   return (
     <div
@@ -43,7 +44,7 @@ export default function PartnerRow({ partner, onClick, isSelected }) {
         {partner.products.length > 0 ? (
           <div className="products-list">
             {partner.products.map(p => (
-              <span key={p} className="product-tag">{p}</span>
+              <span key={p.name} className="product-tag">{p.name}</span>
             ))}
           </div>
         ) : (

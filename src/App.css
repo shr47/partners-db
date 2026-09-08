@@ -451,36 +451,158 @@ body {
 .no-data { font-size: 12px; color: var(--muted); font-style: italic; }
 .notes-text { font-size: 13px; color: var(--text); line-height: 1.5; }
 
-/* ─── CONTACT CARDS ─── */
-.contact-cards-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1;
-}
-.contact-card {
-  background: #f9fafb;
+/* ─── EDIT CONTROLS ─── */
+.edit-input {
+  width: 100%;
+  padding: 5px 10px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 6px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.contact-name {
   font-size: 13px;
-  font-weight: 600;
-  color: var(--text);
+  background: #fff;
+  transition: border-color 0.15s;
+  font-family: inherit;
 }
-.contact-detail {
+.edit-input:focus { outline: none; border-color: var(--ibm-blue); }
+.edit-textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  background: #fff;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.15s;
+}
+.edit-textarea:focus { outline: none; border-color: var(--ibm-blue); }
+
+/* ─── EXPORT BUTTON ─── */
+.export-btn {
+  background: #24a148 !important;
+  color: #fff !important;
+  border-color: #24a148 !important;
+  animation: pulse-green 1.5s infinite;
+}
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(36,161,72,0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(36,161,72,0); }
+}
+
+/* ─── PRODUCT BLOCKS ─── */
+.detail-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+.btn-add-product {
   font-size: 12px;
-  color: var(--ibm-blue);
-  text-decoration: none;
+  padding: 3px 10px;
+  background: var(--ibm-blue);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.product-block {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.product-block-header {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f0f6ff;
+  border-bottom: 1px solid var(--border);
 }
-.contact-detail:hover { text-decoration: underline; }
+.product-name-input {
+  font-weight: 600;
+  color: #0043ce;
+  background: transparent;
+  border-color: transparent;
+}
+.product-name-input:focus { background: #fff; border-color: var(--ibm-blue); }
+
+/* ─── PRODUCT EDITOR ─── */
+.product-editor { padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.role-section { display: flex; flex-direction: column; gap: 4px; }
+.role-label-row { display: flex; justify-content: space-between; align-items: center; }
+.role-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.btn-add-contact {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: #e8f4fd;
+  color: var(--ibm-blue);
+  border: 1px solid #bee3fb;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-add-contact:hover { background: #d0e9fa; }
+.no-contacts-hint { font-size: 11px; color: var(--muted); font-style: italic; padding-right: 4px; }
+
+/* ─── CONTACT EDITOR ─── */
+.contact-editor {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 8px;
+}
+.contact-editor-fields {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 130px 160px;
+  gap: 6px;
+}
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.btn-icon.remove { color: #da1e28; }
+.btn-icon.remove:hover { background: #fff1f1; }
+
+/* ─── AUTOCOMPLETE ─── */
+.autocomplete-wrap { position: relative; }
+.autocomplete-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-hover);
+  list-style: none;
+  margin: 2px 0 0;
+  padding: 4px 0;
+  z-index: 200;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.autocomplete-item {
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  direction: rtl;
+}
+.autocomplete-item:hover { background: #e8f4fd; color: var(--ibm-blue); }
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
