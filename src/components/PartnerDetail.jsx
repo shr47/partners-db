@@ -3,7 +3,6 @@ const LEVEL_COLORS = {
   Gold: '#d97706',
   Silver: '#64748b',
 };
-
 const ECO_COLORS = {
   Michal: '#3b82f6',
   Amitai: '#8b5cf6',
@@ -20,21 +19,46 @@ function InfoSection({ title, children }) {
   );
 }
 
-function ContactDetail({ label, value }) {
-  if (!value) return null;
+function ContactCard({ person }) {
+  return (
+    <div className="contact-card">
+      <span className="contact-name">{person.name}</span>
+      {person.phone && (
+        <a href={`tel:${person.phone}`} className="contact-detail phone">
+          📞 {person.phone}
+        </a>
+      )}
+      {person.email && (
+        <a href={`mailto:${person.email}`} className="contact-detail email">
+          ✉️ {person.email}
+        </a>
+      )}
+    </div>
+  );
+}
+
+function ContactSection({ label, people }) {
+  if (!people || people.length === 0) return null;
   return (
     <div className="detail-row">
       <span className="detail-label">{label}</span>
-      <span className="detail-value">{value}</span>
+      <div className="contact-cards-list">
+        {people.map((p, i) => <ContactCard key={i} person={p} />)}
+      </div>
     </div>
   );
 }
 
 export default function PartnerDetail({ partner, onClose }) {
   if (!partner) return null;
-
   const levelColor = LEVEL_COLORS[partner.partnerLevel] || '#9ca3af';
   const ecoColor = ECO_COLORS[partner.eco] || '#6b7280';
+  const hasContacts =
+    partner.contacts.sell.length > 0 ||
+    partner.contacts.presale.length > 0 ||
+    partner.contacts.deployment.length > 0 ||
+    partner.contacts.clientEngineer.length > 0 ||
+    partner.contacts.expertLab;
 
   return (
     <div className="detail-panel">
@@ -69,12 +93,20 @@ export default function PartnerDetail({ partner, onClose }) {
         )}
 
         <InfoSection title="אנשי קשר">
-          <ContactDetail label="Sell" value={partner.contacts.sell} />
-          <ContactDetail label="Presale" value={partner.contacts.presale} />
-          <ContactDetail label="Deployment / Post Sell" value={partner.contacts.deployment} />
-          <ContactDetail label="Expert Lab" value={partner.contacts.expertLab} />
-          <ContactDetail label="Client Engineer" value={partner.contacts.clientEngineer} />
-          {!Object.values(partner.contacts).some(v => v) && (
+          {hasContacts ? (
+            <>
+              <ContactSection label="Sell" people={partner.contacts.sell} />
+              <ContactSection label="Presale" people={partner.contacts.presale} />
+              <ContactSection label="Deployment" people={partner.contacts.deployment} />
+              <ContactSection label="Client Engineer" people={partner.contacts.clientEngineer} />
+              {partner.contacts.expertLab && (
+                <div className="detail-row">
+                  <span className="detail-label">Expert Lab</span>
+                  <span className="detail-value">{partner.contacts.expertLab}</span>
+                </div>
+              )}
+            </>
+          ) : (
             <span className="no-data">אין מידע על אנשי קשר עדיין</span>
           )}
         </InfoSection>

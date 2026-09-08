@@ -2,14 +2,29 @@ import { useState, useMemo } from 'react';
 import partners from './data/partners.json';
 import SearchBar from './components/SearchBar';
 import FilterPanel from './components/FilterPanel';
-import PartnerCard from './components/PartnerCard';
+import PartnerRow from './components/PartnerRow';
 import PartnerDetail from './components/PartnerDetail';
 import './App.css';
 
 const DEFAULT_FILTERS = { eco: 'הכל', level: 'הכל' };
 
 function normalize(str) {
+  if (!str) return '';
+  if (typeof str === 'object') return str.name ? str.name.toLowerCase() : '';
   return str.toLowerCase().trim();
+}
+
+function hasData(p) {
+  return (
+    p.products.length > 0 ||
+    p.contacts.sell.length > 0 ||
+    p.contacts.presale.length > 0 ||
+    p.contacts.deployment.length > 0 ||
+    p.contacts.expertLab ||
+    p.contacts.clientEngineer.length > 0 ||
+    p.partnerLevel ||
+    p.notes
+  );
 }
 
 export default function App() {
@@ -19,18 +34,25 @@ export default function App() {
 
   const filtered = useMemo(() => {
     const q = normalize(search);
-    return partners.filter(p => {
+    const result = partners.filter(p => {
       if (filters.eco !== 'הכל' && p.eco !== filters.eco) return false;
       if (filters.level !== 'הכל' && p.partnerLevel !== filters.level) return false;
       if (!q) return true;
+      const contactNames = ['sell','presale','deployment','clientEngineer']
+        .flatMap(k => Array.isArray(p.contacts[k]) ? p.contacts[k].map(c => normalize(c.name)) : []);
       return (
         normalize(p.name).includes(q) ||
         p.products.some(prod => normalize(prod).includes(q)) ||
-        Object.values(p.contacts).some(v => normalize(v).includes(q)) ||
+        contactNames.some(n => n.includes(q)) ||
         normalize(p.eco).includes(q) ||
         normalize(p.notes).includes(q)
       );
     });
+    // שותפים עם מידע קודם, ריקים אחרי
+    return [
+      ...result.filter(p => hasData(p)),
+      ...result.filter(p => !hasData(p)),
+    ];
   }, [search, filters]);
 
   return (
@@ -78,8 +100,8 @@ export default function App() {
           />
         </aside>
 
-        <section className={`content ${selected ? 'with-detail' : ''}`}>
-          <div className="cards-grid">
+        <section className="content">
+          <div className="partners-list">
             {filtered.length === 0 ? (
               <div className="empty-state">
                 <span>🔍</span>
@@ -90,11 +112,11 @@ export default function App() {
               </div>
             ) : (
               filtered.map(p => (
-                <PartnerCard
+                <PartnerRow
                   key={p.id}
                   partner={p}
                   isSelected={selected?.id === p.id}
-                  onClick={setSelected}
+                  onClick={() => setSelected(selected?.id === p.id ? null : p)}
                 />
               ))
             )}
